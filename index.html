@@ -15,7 +15,7 @@
      <!--  diseño de cabeza     -->
 
      <header class="header">
-        <a href="portafoli.html" class="logo">K.Fajardo</a>
+        <a href="index.html" class="logo">K.Fajardo</a>
         <div class='bx bx-menu' id="menu-icon"></div>
         <button class="menuAbrir">Menu</button>
         <nav class="navbar">
@@ -24,15 +24,15 @@
                 <li><a href="#home" class="active">Inicio</a></li>
                 <li><a href="#acercade">Acerca de</a></li>
                 <li><a href="#educacion">Educacion</a></li>
-                <li><a href="./pages/Habilidades.html">Habilidades</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
      </header>
     <!-- diseño de la seccion de home-->
     <main>
-        <section class="home" id="home">
-            <div class="home-content" data-aos="fade-right">
+        <section class="home" id="home" data-aos="fade-right">
+            <div class="home-content">
                 <h1> Hola, soy <span>Kevin Fajardo</span></h1>
                 <div class="text-animate">
                     <h3>Desarrollador Web</h3>
@@ -53,13 +53,13 @@
         </section>
         <!-- diseño de la seccion de acerca de-->
         <section class="acercade" id="acercade">
-            <div class="d-flex justify-content-center animacionMiCamino">
+            <div class="d-flex justify-content-center animacionMiCamino " data-aos="zoom-out-up">
                 <h1>Acerca de <span>Mi</span></h1>
             </div>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center " data-aos="zoom-out">
                 <img src="./Imagenes/kakashi.jpg" class="img-fluid" alt="kakashi">
             </div>
-            <div class="contenidoAcercade">
+            <div class="contenidoAcercade" data-aos="fade-up"data-aos-anchor-placement="bottom-bottom">
                 <h2>Desarrollador Web</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae 
                     blanditiis animi, debitis aspernatur, eligendi omnis vero ea qui minima itaque iusto atque optio ipsa eos, 
@@ -70,7 +70,7 @@
             </div>
         </section>
         <section class="educacion" id="educacion">
-            <div class="animacionMiCamino">
+            <div class="animacionMiCamino" data-aos="fade-right">
                 <h1><span>Mi</span> Camino</h1>
             </div>
             <div class="container">
@@ -127,12 +127,87 @@
             </div>
         </section>
         <section id="habilidades" class="habilidades">
-            <div>
+            <div class="animacionMiCamino" data-aos="fade-right">
                 <h1><span>Mis</span> Habilidades</h1>
             </div>
-            <div>
-                <div>
-                    <h2></h2>
+            <div class="content">
+                <div class="row " data-aos="fade-right">
+                    <div class="col-sm-6 skills ">
+                        <h2>Code</h2>
+                        <div class="cuadroHabili">
+                            <div>
+                                <h3>Html<span>80%</span></h3>
+                                <div class="barra"><span></span></div>
+                            </div>
+                            <div>
+                                <h3>Css<span>70%</span></h3>
+                                <div class="barra"><span></span></div>
+                            </div>
+                            <div>
+                                <h3>Sass<span>80%</span></h3>
+                                <div class="barra"><span></span></div>
+                            </div>
+                            <div>
+                                <h3>C++<span>100%</span></h3>
+                                <div class="barra"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 skills">
+                        <h2>Programas</h2>
+                        <div class="cuadroHabili">
+                            <div>
+                                <h3>Adobe Illustrator<span>70%</span></h3>
+                                <div class="barra"><span></span></div>
+                            </div>
+                            <div>
+                                <h3>Adobe Photoshop<span>70%</span></h3>
+                                <div class="barra"><span></span></div>
+                            </div>
+                            <div>
+                                <h3>Cinema 4D<span>80%</span></h3>
+                                <div class="barra"><span></span></div>
+                            </div>
+                            <div>
+                                <h3>Visual Code<span>80%</span></h3>
+                                <div class="barra"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacto" id="contacto">
+            <div class="animacionMiCamino" data-aos="fade-right">
+                <h1>Contacta<span>me</span></h1>
+            </div>
+            <div class="container" data-aos="fade-right">
+                <div class="row inputbox">
+                    <div class="col-sm-6 inputStyle">
+                        <input type="text" placeholder="Nombre" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="col-sm-6 inputStyle">
+                        <input type="text" placeholder="Email" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="col-sm-6 inputStyle">
+                        <input type="text" placeholder="Numero" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="col-sm-6 inputStyle">
+                        <input type="text" placeholder="Asunto" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="col-sm-12 inputStyle">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje" required></textarea>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="botonEnviar">
+                        <div class="btn-box">
+                            <a href="#" class="btn">Enviar</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
